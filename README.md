@@ -118,7 +118,7 @@ Sample:
 curl http://127.0.0.1:3000/tickets/6/qr
 ```
 The request will return the QR code in SVG format.
-![Alt text](http://127.0.0.1:3000/tickets/6/qr)
+![Alt text](image/tickets:6:qr.jpg)
 
 ### Acknowledgments 
 
