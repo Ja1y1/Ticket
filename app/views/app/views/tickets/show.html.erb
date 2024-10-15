@@ -1,0 +1,35 @@
+<!-- Layout or Page Header (Optional) -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>App Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= csrf_meta_tags %> <!-- CSRF protection -->
+  <%= csp_meta_tag %>    <!-- Content Security Policy -->
+
+  <!-- Include CSS or other head elements -->
+  <%= stylesheet_link_tag "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+</head>
+
+<body>
+
+<h1>Ticket Code: <%= @ticket.code %></h1>
+
+<div>
+  <%= @svg.html_safe %>
+</div>
+
+  <!-- Footer (Optional) -->
+  <footer>
+    <p>&copy; 2024 Your Company</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+# <%= @svg.html_safe %>
