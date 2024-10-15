@@ -23,7 +23,11 @@ To install the `rqrcode` gem, add it to your `Gemfile`:
 ```ruby
 gem 'rqrcode'
 ```
-then run  bundle install 
+Then run
+
+ ```
+  bundle install 
+ ```
 
 
 ## API Reference 
@@ -32,15 +36,16 @@ then run  bundle install
 ### Getting Started 
 
 
-BAse URL : This API runs on local host : http://127.0.0.1:3000
+Base URL : This API runs on local host : http://127.0.0.1:3000
 
-Authentication: This version of the application doesn't require authentication or api Keys/
+Authentication: This version of the application doesn't require authentication or api Keys
 
 ### API Endpoints
 
 #### Get '/tickets'
 
 Excpects: None 
+
 Returns: A list of ticket objects containing their id, code, and timestamps.
 
 Sample: 
@@ -87,6 +92,7 @@ curl  http://127.0.0.1:3000/tickets -X POST
 #### GET '/tickets/<id>'
 
 Expects: None
+
 Returns: QR code with provided id
 
 Sample:
@@ -103,7 +109,7 @@ curl http://127.0.0.1:3000/tickets/6
     },    
 ]
 ```
-#### GET 'tickets/<id>/qr'
+#### GET 'tickets/id/qr'
 Expects: A ticket id.
 Returns: The QR code for the provided ticket id as an SVG image.
 
